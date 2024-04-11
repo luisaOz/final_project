@@ -7,6 +7,7 @@
                 <div class="card-header">Crear Nuevo Post</div>
 
                 <div class="card-body">
+        
     <form method="POST" action="{{ route('posts.store') }}">
         @csrf
         <div class="form-group">
@@ -18,12 +19,13 @@
             <textarea name="content" id="content" rows="5" class="form-control"></textarea>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="category">Categoría:</label>
-                                <select name="category" id="category" class ="form-control">
+                                <label for="category">Category:</label>
+                                <select name="category_id" id="category" class="form-control">
                                     @foreach($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->category_name }}</option>
                                     @endforeach
                                 </select>
+                            </div>
                                     <button type="submit" class="btn btn-primary">Guardar</button>
                         </form>
                     </div>

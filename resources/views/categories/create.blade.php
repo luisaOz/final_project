@@ -2,6 +2,8 @@
 
 
 @section('content')
+<div class="container">
+
     <h1>Crear categoría</h1>
     <form action="{{ route('categories.store') }}" method="post">
         @csrf
@@ -20,4 +22,5 @@
             <button class="btn btn-primary" type="submit">Guardar</button>
         </div>
     </form>
+</div>
 @endsection
