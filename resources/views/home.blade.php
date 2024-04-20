@@ -15,6 +15,13 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./img/13034.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Categorias</h5>
+                          <a href="categories" class="btn btn-primary">Ver</a>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>

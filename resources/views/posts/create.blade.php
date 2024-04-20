@@ -6,8 +6,7 @@
             <div class="card">
                 <div class="card-header">Crear Nuevo Post</div>
 
-                <div class="card-body">
-        
+                <div class="card-body">    
     <form method="POST" action="{{ route('posts.store') }}">
         @csrf
         <div class="form-group">
@@ -33,4 +32,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

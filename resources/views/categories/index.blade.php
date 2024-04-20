@@ -24,6 +24,7 @@
                         @endif
                     </td>
                     <td>
+                        
                         <a class="btn btn-primary" href="{{ route('categories.edit', $category->id) }}">Editar</a>
                         <form action="{{ route('categories.destroy', $category->id) }}" method="POST"
                             style="display: inline;">
